@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- license https://github.com/GoMADTech/Sonar-PSR-Profiles/blob/master/licence.txt BSD Licence -->
+<rules>
+  <rule key="PSR1.Classes.ClassDeclaration.MultipleClasses" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationMultipleClasses</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Each class must be in a file by itself]]></description>
+  </rule>
+  <rule key="PSR1.Classes.ClassDeclaration.MissingNamespace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationMissingNamespace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Each class must be in a namespace of at least one level (a top-level vendor name)]]></description>
+  </rule>
+  <rule key="PSR1.Files.SideEffects.FoundWithSymbols" priority="INFO">
+    <category name="Maintainability" />
+    <name>SideEffectsFoundWithSymbols</name>
+    <configKey>rulesets/SideEffects</configKey>
+    <description><![CDATA[A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both. The first symbol is defined on line %s and the first side effect is on line %s.]]></description>
+  </rule>
+  <rule key="Generic.Files.ByteOrderMark.Found" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ByteOrderMarkFound</name>
+    <configKey>rulesets/ByteOrderMark</configKey>
+    <description><![CDATA[File contains %s byte order mark, which may corrupt your application]]></description>
+  </rule>
+  <rule key="Generic.NamingConventions.CamelCapsFunctionName.MethodDoubleUnderscore" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CamelCapsFunctionNameMethodDoubleUnderscore</name>
+    <configKey>rulesets/CamelCapsFunctionName</configKey>
+    <description><![CDATA[Method name "%s" is invalid; only PHP magic methods should be prefixed with a double underscore]]></description>
+  </rule>
+  <rule key="Generic.NamingConventions.CamelCapsFunctionName.ScopeNotCamelCaps" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CamelCapsFunctionNameScopeNotCamelCaps</name>
+    <configKey>rulesets/CamelCapsFunctionName</configKey>
+    <description><![CDATA[%s method name "%s" is not in camel caps format]]></description>
+  </rule>
+  <rule key="Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CamelCapsFunctionNameNotCamelCaps</name>
+    <configKey>rulesets/CamelCapsFunctionName</configKey>
+    <description><![CDATA[Method name "%s" is not in camel caps format]]></description>
+  </rule>
+  <rule key="Generic.NamingConventions.CamelCapsFunctionName.FunctionDoubleUnderscore" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CamelCapsFunctionNameFunctionDoubleUnderscore</name>
+    <configKey>rulesets/CamelCapsFunctionName</configKey>
+    <description><![CDATA[Function name "%s" is invalid; only PHP magic methods should be prefixed with a double underscore]]></description>
+  </rule>
+</rules>

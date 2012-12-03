@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- license https://github.com/GoMADTech/Sonar-PSR-Profiles/blob/master/licence.txt BSD Licence -->
+<rules>
+    <rule key="PSR1.Classes.ClassDeclaration.MultipleClasses" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationMultipleClasses</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Each class must be in a file by itself]]>
+        </description>
+    </rule>
+    <rule key="PSR1.Classes.ClassDeclaration.MissingNamespace" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationMissingNamespace</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Each class must be in a namespace of at least one level (a top-level vendor name)]]>
+        </description>
+    </rule>
+    <rule key="PSR1.Files.SideEffects.FoundWithSymbols" priority="INFO">
+        <category name="Maintainability" />
+        <name>SideEffectsFoundWithSymbols</name>
+        <configKey>rulesets/SideEffects</configKey>
+        <description><![CDATA[A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both. The first symbol is defined on line %s and the first side effect is on line %s.]]>
+        </description>
+    </rule>
+    <rule key="Generic.Files.ByteOrderMark.Found" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ByteOrderMarkFound</name>
+        <configKey>rulesets/ByteOrderMark</configKey>
+        <description><![CDATA[File contains %s byte order mark, which may corrupt your application]]>
+        </description>
+    </rule>
+    <rule key="Generic.NamingConventions.CamelCapsFunctionName.MethodDoubleUnderscore" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>CamelCapsFunctionNameMethodDoubleUnderscore</name>
+        <configKey>rulesets/CamelCapsFunctionName</configKey>
+        <description><![CDATA[Method name "%s" is invalid; only PHP magic methods should be prefixed with a double underscore]]>
+        </description>
+    </rule>
+    <rule key="Generic.NamingConventions.CamelCapsFunctionName.ScopeNotCamelCaps" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>CamelCapsFunctionNameScopeNotCamelCaps</name>
+        <configKey>rulesets/CamelCapsFunctionName</configKey>
+        <description><![CDATA[%s method name "%s" is not in camel caps format]]>
+        </description>
+    </rule>
+    <rule key="Generic.NamingConventions.CamelCapsFunctionName.NotCamelCaps" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>CamelCapsFunctionNameNotCamelCaps</name>
+        <configKey>rulesets/CamelCapsFunctionName</configKey>
+        <description><![CDATA[Method name "%s" is not in camel caps format]]>
+        </description>
+    </rule>
+    <rule key="Generic.NamingConventions.CamelCapsFunctionName.FunctionDoubleUnderscore" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>CamelCapsFunctionNameFunctionDoubleUnderscore</name>
+        <configKey>rulesets/CamelCapsFunctionName</configKey>
+        <description><![CDATA[Function name "%s" is invalid; only PHP magic methods should be prefixed with a double underscore]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.MissingBrace" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationMissingBrace</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Possible parse error: %s missing opening or closing brace]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationOpenBraceNewLine</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Opening brace of a %s must be on the line after the definition]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.OpenBraceWrongLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationOpenBraceWrongLine</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Opening brace of a %s must be on the line following the %s declaration; found %s line(s)]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.OpenBraceNotAlone" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationOpenBraceNotAlone</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Opening %s brace must be on a line by itself]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceBeforeBrace" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceBeforeBrace</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected %s spaces before opening brace; %s found]]>
+        </description>
+        <param>
+            <key>indent</key>
+            <description>The number of spaces code should be indented.</description>
+            <defaultValue>4</defaultValue>
+        </param>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceBeforeKeyword" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceBeforeKeyword</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space between %s and %s keywords; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceAfterKeyword" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceAfterKeyword</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space between %s keyword and %s name; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceAfterName" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceAfterName</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space after %s name; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.ExtendsLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationExtendsLine</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[The Extends keyword must be on the same line as the %s name]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.ImplementsLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationImplementsLine</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[The Implements keyword must be on the same line as the %s name]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceBeforeExtends" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceBeforeExtends</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space before Extends keyword; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceBeforeImplements" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceBeforeImplements</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space before Implements keyword; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.InterfaceSameLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationInterfaceSameLine</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Only one interface may be specified per line in a multi-line implements declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.InterfaceWrongIndent" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationInterfaceWrongIndent</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected %s spaces before interface name; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.NoSpaceBeforeName" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationNoSpaceBeforeName</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space before "%s"; 0 found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceBeforeName" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceBeforeName</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 1 space before "%s"; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.SpaceBeforeComma" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationSpaceBeforeComma</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Expected 0 spaces between "%s" and comma; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationCloseBraceAfterBody</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[The closing brace for the %s must go on the next line after the body]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.ClassDeclaration.CloseBraceSameLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ClassDeclarationCloseBraceSameLine</name>
+        <configKey>rulesets/ClassDeclaration</configKey>
+        <description><![CDATA[Closing %s brace must be on a line by itself]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.PropertyDeclaration.Underscore" priority="INFO">
+        <category name="Maintainability" />
+        <name>PropertyDeclarationUnderscore</name>
+        <configKey>rulesets/PropertyDeclaration</configKey>
+        <description><![CDATA[Property name "%s" should not be prefixed with an underscore to indicate visibility]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.PropertyDeclaration.VarUsed" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>PropertyDeclarationVarUsed</name>
+        <configKey>rulesets/PropertyDeclaration</configKey>
+        <description><![CDATA[The var keyword must not be used to declare a property]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.PropertyDeclaration.Multiple" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>PropertyDeclarationMultiple</name>
+        <configKey>rulesets/PropertyDeclaration</configKey>
+        <description><![CDATA[There must not be more than one property declared per statement]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Classes.PropertyDeclaration.ScopeMissing" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>PropertyDeclarationScopeMissing</name>
+        <configKey>rulesets/PropertyDeclaration</configKey>
+        <description><![CDATA[Visibility must be declared on property "%s"]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed" priority="INFO">
+        <category name="Maintainability" />
+        <name>ElseIfDeclarationNotAllowed</name>
+        <configKey>rulesets/ElseIfDeclaration</configKey>
+        <description><![CDATA[Usage of ELSE IF is discouraged; use ELSEIF instead]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.caseNotLower" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationcaseNotLower</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[CASE keyword must be lowercase; expected "%s" but found "%s"]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.defaultNotLower" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationdefaultNotLower</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[DEFAULT keyword must be lowercase; expected "%s" but found "%s"]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.caseIndent" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationcaseIndent</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[CASE keyword must be indented 4 spaces from SWITCH keyword]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.defaultIndent" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationcaseIndent</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[DEFAULT keyword must be indented 4 spaces from SWITCH keyword]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.SpaceBetweenCase" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationSpaceBetweenCase</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[Blank lines are not allowed between case statements; found %s]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.SpacingAfterCase" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationSpacingAfterCase</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[CASE keyword must be followed by a single space]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColoncase" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationSpaceBeforeColoncase</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[There must be no space before the colon in a CASE statement]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColondefault" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationSpaceBeforeColondefault</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[There must be no space before the colon in a DEFAULT statement]]>
+        </description>
+    </rule>
+
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.caseWrongOpener" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationcaseWrongOpener</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[CASE statements must not be defined using curly braces]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.defaultWrongOpener" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationdefaultWrongOpener</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[DEFAULT statements must not be defined using curly braces]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.BreakIndent" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationBreakIndent</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[Terminating statement must be indented to the same level as the CASE body]]>
+        </description>
+    </rule>
+    <rule key="PSR2.ControlStructures.SwitchDeclaration.TerminatingComment" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SwitchDeclarationTerminatingComment</name>
+        <configKey>rulesets/SwitchDeclaration</configKey>
+        <description><![CDATA[There must be a comment when fall-through is intentional in a non-empty case body]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Files.EndFileNewline.NoneFound" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>EndFileNewlineNoneFound</name>
+        <configKey>rulesets/EndFileNewline</configKey>
+        <description><![CDATA[Expected 1 newline at end of file; 0 found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Files.EndFileNewline.TooMany" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>EndFileNewlineTooMany</name>
+        <configKey>rulesets/EndFileNewline</configKey>
+        <description><![CDATA[Expected 1 blank line at end of file; %s found]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Methods.MethodDeclaration.Underscore" priority="INFO">
+        <category name="Maintainability" />
+        <name>MethodDeclarationUnderscore</name>
+        <configKey>rulesets/MethodDeclaration</configKey>
+        <description><![CDATA[Method name "%s" should not be prefixed with an underscore to indicate visibility]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Methods.MethodDeclaration.StaticBeforeVisibility" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MethodDeclarationStaticBeforeVisibility</name>
+        <configKey>rulesets/MethodDeclaration</configKey>
+        <description><![CDATA[The static declaration must come after the visibility declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Methods.MethodDeclaration.FinalAfterVisibility" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MethodDeclarationFinalAfterVisibility</name>
+        <configKey>rulesets/MethodDeclaration</configKey>
+        <description><![CDATA[The final declaration must precede the visibility declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Methods.MethodDeclaration.AbstractAfterVisibility" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MethodDeclarationAbstractAfterVisibility</name>
+        <configKey>rulesets/MethodDeclaration</configKey>
+        <description><![CDATA[The abstract declaration must precede the visibility declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>NamespaceDeclarationBlankLineAfter</name>
+        <configKey>rulesets/NamespaceDeclaration</configKey>
+        <description><![CDATA[There must be one blank line after the namespace declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Namespaces.UseDeclaration.MultipleDeclarations" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>UseDeclarationMultipleDeclarations</name>
+        <configKey>rulesets/UseDeclaration</configKey>
+        <description><![CDATA[There must be one USE keyword per declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Namespaces.UseDeclaration.UseAfterNamespace" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>UseDeclarationUseAfterNamespace</name>
+        <configKey>rulesets/UseDeclaration</configKey>
+        <description><![CDATA[USE declarations must go after the first namespace declaration]]>
+        </description>
+    </rule>
+    <rule key="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>UseDeclarationSpaceAfterLastUse</name>
+        <configKey>rulesets/UseDeclaration</configKey>
+        <description><![CDATA[There must be one blank line after the last USE statement; %s found;]]>
+        </description>
+    </rule>
+    <rule key="PEAR.Functions.FunctionCallSignature.EmptyLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>FunctionCallSignatureEmptyLine</name>
+        <configKey>rulesets/FunctionCallSignature</configKey>
+        <description><![CDATA[Empty lines are not allowed in multi-line function calls]]>
+        </description>
+    </rule>
+    <rule key="PEAR.Functions.FunctionCallSignature.MultipleArguments" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>FunctionCallSignatureMultipleArguments</name>
+        <configKey>rulesets/FunctionCallSignature</configKey>
+        <description><![CDATA[Only one argument is allowed per line in a multi-line function call]]>
+        </description>
+    </rule>
+    <rule key="Squiz.Functions.MultiLineFunctionDeclaration.FirstParamSpacing" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MultiLineFunctionDeclarationFirstParamSpacing</name>
+        <configKey>rulesets/MultiLineFunctionDeclaration</configKey>
+        <description><![CDATA[The first parameter of a multi-line function or Use declaration must be on the line after the opening bracket]]>
+        </description>
+    </rule>
+    <rule key="Squiz.Functions.MultiLineFunctionDeclaration.OneParamPerLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MultiLineFunctionDeclarationOneParamPerLine</name>
+        <configKey>rulesets/MultiLineFunctionDeclaration</configKey>
+        <description><![CDATA[Multi-line function or Use declarations must define one parameter per line]]>
+        </description>
+    </rule>
+    <rule key="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterComma" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MultiLineFunctionDeclarationContentAfterComma</name>
+        <configKey>rulesets/MultiLineFunctionDeclaration</configKey>
+        <description><![CDATA[Commas in multi-line function or Use declarations must be the last content on a line]]>
+        </description>
+    </rule>
+    <rule key="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>MultiLineFunctionDeclarationBraceOnSameLine</name>
+        <configKey>rulesets/MultiLineFunctionDeclaration</configKey>
+        <description><![CDATA[Function brace on the same line]]>
+        </description>
+    </rule>
+    <rule key="Squiz.WhiteSpace.SuperfluousWhitespace.EndFile" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SuperfluousWhitespaceEndFile</name>
+        <configKey>rulesets/SuperfluousWhitespace</configKey>
+        <description><![CDATA[Additional whitespace found at end of file]]>
+        </description>
+    </rule>
+    <rule key="Squiz.WhiteSpace.SuperfluousWhitespace.StartFile" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SuperfluousWhitespaceStartFile</name>
+        <configKey>rulesets/SuperfluousWhitespace</configKey>
+        <description><![CDATA[Additional whitespace found at start of file]]>
+        </description>
+    </rule>
+    <rule key="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SuperfluousWhitespaceEndLine</name>
+        <configKey>rulesets/SuperfluousWhitespace</configKey>
+        <description><![CDATA[Whitespace found at end of line]]>
+        </description>
+    </rule>
+    <rule key="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>SuperfluousWhitespaceEmptyLines</name>
+        <configKey>rulesets/SuperfluousWhitespace</configKey>
+        <description><![CDATA[Functions must not contain multiple empty lines in a row; found %s empty lines]]>
+        </description>
+    </rule>
+</rules>
