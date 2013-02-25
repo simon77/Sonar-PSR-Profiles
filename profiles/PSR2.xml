@@ -253,7 +253,12 @@
         <rule>
             <repositoryKey>php_codesniffer_rules</repositoryKey>
             <key>Generic.Files.LineLength.MaxExceeded</key>
-            <priority>MAJOR</priority>
+            <priority>MINOR</priority>
+        </rule>
+        <rule>
+            <repositoryKey>php_codesniffer_rules</repositoryKey>
+            <key>Generic.Files.LineLength.TooLong</key>
+            <priority>INFO</priority>
         </rule>
         <rule>
             <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -553,6 +558,11 @@
         <rule>
             <repositoryKey>php_codesniffer_rules</repositoryKey>
             <key>Squiz.WhiteSpace.SuperfluousWhitespace.EndFile</key>
+            <priority>MAJOR</priority>
+        </rule>
+        <rule>
+            <repositoryKey>php_codesniffer_rules</repositoryKey>
+            <key>Squiz.WhiteSpace.SuperfluousWhitespace.EndLine</key>
             <priority>MAJOR</priority>
         </rule>
         <rule>
