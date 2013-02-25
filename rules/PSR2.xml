@@ -399,6 +399,12 @@
         <description><![CDATA[Only one argument is allowed per line in a multi-line function call]]>
         </description>
     </rule>
+    <rule key="Squiz.ControlStructures.ControlSignature" priority="MAJOR">
+        <category name="Maintainability" />
+        <name>ControlStructuresControlSignature</name>
+        <configKey>rulesets/ControlSignature</configKey>
+        <description><![CDATA[Incorrect control signature]]></description>
+    </rule>
     <rule key="Squiz.Functions.MultiLineFunctionDeclaration.FirstParamSpacing" priority="MAJOR">
         <category name="Maintainability" />
         <name>MultiLineFunctionDeclarationFirstParamSpacing</name>
